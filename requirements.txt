@@ -1,0 +1,81 @@
+# =========================
+# Core (general utilities)
+# =========================
+python-dotenv>=1.0.1
+pydantic>=2.7.0
+tqdm>=4.66.0
+rich>=13.7.0
+loguru>=0.7.2
+tenacity>=8.3.0
+
+# =========================
+# Data + text processing
+# =========================
+numpy>=1.26.0
+pandas>=2.2.0
+
+# =========================
+# Ingestion (web + files)
+# =========================
+requests>=2.32.0
+httpx>=0.27.0
+beautifulsoup4>=4.12.3
+lxml>=5.2.0
+
+# PDF / DOC parsing (pick what you need; PDF is common)
+pypdf>=4.2.0
+pdfplumber>=0.11.0
+python-docx>=1.1.2
+
+# =========================
+# Chunking / NLP helpers
+# =========================
+tiktoken>=0.7.0
+
+# =========================
+# Embeddings + Vector search
+# =========================
+sentence-transformers>=3.0.0
+qdrant-client>=1.10.0
+
+# Optional local embeddings acceleration (recommended if using sentence-transformers)
+torch>=2.3.0
+
+# =========================
+# Reranking (optional but common)
+# =========================
+rank-bm25>=0.2.2
+
+# =========================
+# LLM clients (choose based on your stack)
+# =========================
+
+# Local LLM inference (optional)
+llama-cpp-python>=0.2.80
+
+# =========================
+# Orchestration (optional but popular for RAG pipelines)
+# =========================
+langchain>=0.2.12
+langchain-community>=0.2.11
+langchain-text-splitters>=0.2.2
+
+# =========================
+# API layer (optional)
+# =========================
+fastapi>=0.112.0
+uvicorn[standard]>=0.30.0
+
+# =========================
+# Evaluation (optional but useful)
+# =========================
+rouge-score>=0.1.2
+scikit-learn>=1.5.0
+
+# =========================
+# Testing / Dev (optional)
+# =========================
+pytest>=8.2.0
+black>=24.4.0
+ruff>=0.5.0
+mypy>=1.10.0
